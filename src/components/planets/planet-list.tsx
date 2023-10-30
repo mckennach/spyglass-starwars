@@ -63,7 +63,7 @@ export default function PlanetList( ) {
                   </div>
                 </div>
                 <div className="shrink-0 sm:flex sm:flex-col sm:items-end items-center">
-                  <Link href={`/planet/${planetId}`} className="text-sm font-semibold leading-6 text-neutral-900 dark:text-white flex hover:text-saber-blue dark:hover:text-saber-red">Learn More <ArrowRight className="ml-2 w-4"/></Link>
+                  <Link href={`/planet/${planetId}`} className="text-sm font-semibold leading-6 text-neutral-900 dark:text-white flex hover:text-saber-blue dark:hover:text-saber-red">Learn More <ArrowRight className="ml-2 w-4"></ArrowRight></Link>
                 </div>
               </button> 
             </li>

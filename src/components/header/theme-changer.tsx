@@ -4,11 +4,12 @@ import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import { MoonIcon, SunIcon } from 'lucide-react'
 export default function ThemeChanger()  {
-  const { theme, setTheme } = useTheme()
-  const [logo, setLogo] = useState(theme === 'dark' ? 'sith.svg' : 'jedi.svg');
+  const { theme, setTheme } = useTheme();
+  console.log(theme);
+  const [logo, setLogo] = useState(theme === 'dark' ? 'jedi.svg' : 'sith.svg');
 
   useEffect(() => {
-    setLogo(theme === 'dark' ? 'sith.svg' : 'jedi.svg');
+    setLogo(theme === 'dark' ? 'jedi.svg' : 'sith.svg');
   }, [theme]);
 
   return (

@@ -31,7 +31,7 @@ export default function PlanetData({ id }: { id: string } ) {
         setPlanet(data?.data);
       });
     } 
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     if(planet?.films) {
@@ -49,7 +49,7 @@ export default function PlanetData({ id }: { id: string } ) {
           });
           fetchFilms(filmIds);
         }
-  }, [films]);
+  }, [films, hasFetchedFilms]);
 
   useEffect(() => {
     if(!hasFetchedResidents && residents && residents.length > 0) {
@@ -60,7 +60,7 @@ export default function PlanetData({ id }: { id: string } ) {
       });
       fetchResidents(residentIds);
     }
-}, [residents]);
+}, [residents, hasFetchedResidents]);
 
   const fetchFilms = async (filmIds: any) => {
     filmIds.forEach(async (filmId: any) => {

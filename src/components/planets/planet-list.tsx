@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { PlanetsListProps, PlanetProps } from "@/utils/types/types.planets"
-import { OrbitIcon } from "lucide-react";
+import { OrbitIcon, ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import PlanetDataLoading from "./planet-data-loading";
@@ -63,7 +63,7 @@ export default function PlanetList( ) {
                   </div>
                 </div>
                 <div className="shrink-0 sm:flex sm:flex-col sm:items-end items-center">
-                  <Link href={`/planet/${planetId}`} className="text-sm leading-6 text-neutral-900 dark:text-white hover:text-saber-blue dark:hover:text-saber-red">Learn More</Link>
+                  <Link href={`/planet/${planetId}`} className="text-sm font-semibold leading-6 text-neutral-900 dark:text-white flex hover:text-saber-blue dark:hover:text-saber-red">Learn More <ArrowRight className="ml-2 w-4"/></Link>
                 </div>
               </button> 
             </li>

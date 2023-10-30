@@ -47,6 +47,9 @@ export default function PlanetList( ) {
   
   return (
     <div className="container mx-auto space-y-8">
+      <div>
+        <h1 className="text-2xl font-bold">Planets of Star Wars</h1>
+      </div>
       <ul role="list" className="divide-y divide-neutral-800 dark:divide-neutral-100 w-full">
         {planets.map((planet, index) => {
           const planetId = planet.url.split('/').filter(Boolean).pop();

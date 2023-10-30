@@ -4,7 +4,7 @@ import React from 'react';
 
 const Loading = () => {
   return (
-    <div className="container mx-auto max-w-3xl w-full animate-pulse">
+    <div className="container mx-auto  animate-pulse">
       <div className="px-4 sm:px-0 flex justify-between">
         <div>
           <h1 className="text-xl font-bold leading-7 text-neutral-950 dark:text-white"></h1>

@@ -85,7 +85,7 @@ export default function PlanetData({ id }: { id: string } ) {
 
 
   return (
-    <div className="container mx-auto max-w-3xl w-full">
+    <div className="container mx-auto ">
       <div className="px-4 sm:px-0 flex justify-between">
         <div>
           <h1 className="text-xl font-bold leading-7 text-neutral-950 dark:text-white">{planet?.name}</h1>

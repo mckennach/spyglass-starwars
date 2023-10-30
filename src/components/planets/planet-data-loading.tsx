@@ -6,7 +6,7 @@ interface PlanetDataLoadingProps {
 
 const PlanetDataLoading: React.FC<PlanetDataLoadingProps> = ({ message }) => {
   return (
-    <div className="container mx-auto max-w-3xl w-full animate-pulse">
+    <div className="container mx-auto  animate-pulse">
       <div className="px-4 sm:px-0 rounded-md flex justify-between">
         <div>
           <h1 className="text-xl font-bold leading-7 text-neutral-950 dark:text-white"></h1>
